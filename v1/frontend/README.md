@@ -1,34 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Estória de usuário
 
-## Getting Started
+Eu enquanto colaborador quero registrar uma venda,
+podendo indicar quem fez a venda, identificar a
+venda, informando seu valor e quando foi realizada.
+Assim, será possível registrar e contabilizar a venda.
+## Classes
+- Venda
+- Colaborador
+### Venda
+- identificador
+- responsável
+- valor
+- data e hora da venda
 
-First, run the development server:
+### Colaborador
+- identificador
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Exemplo: Loja 1,99 - Descrição de Caso de Uso
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Registrar vendas
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+objetivo: permite cadastrar as vendas efetuadas pelos vendedores de
+uma loja.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Ator: Colaborador(usuário)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Pré-condição: usuário na opção de registro de venda
 
-## Learn More
+Cenário Principal
 
-To learn more about Next.js, take a look at the following resources:
+O sistema prepara uma lista dos vendedores cadastrados na loja.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O usuário seleciona o vendedor que efetuou a venda, a partir
+da lista já montada pelo sistema
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+O usuário informa o número da venda.
